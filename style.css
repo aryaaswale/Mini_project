@@ -11,14 +11,15 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(218, 216, 170);
-    font-weight: bold;
+    background: #18363E;
+    font-weight: bolder;
 }
 
 .wrapper{
-    background: white;
+    background: #5F97AA;
     width: 450px;
     border-radius: 10px;
+    box-shadow: 1px 1px  40px black;
 }
 .calender ul{
     display: flex;
@@ -34,7 +35,19 @@ body{
 header .current-date{
     font-size: 1.45rem;
     font-weight: 1000;
+    font-style: italic;
+    font-weight: bold;
+    color: #5F97AA;
     margin-bottom: 20px;
+    background-color: #18363E;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    
+    padding-left: 15px;
+    padding-top: 2px;
 }
 
 
@@ -47,8 +60,8 @@ header .icons span{
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    background:#f2f2f2;
-    color: #878787;
+    background:#5F97AA;
+    color: #2D5F6E;
     font-size: 1.9rem;
     margin-bottom:20px ;
 }
@@ -58,7 +71,7 @@ header .icons span:last-child{
 }
 
 header .icons span:hover{
-    background: rgb(131, 181, 131);
+    background: #18363E;
 }
 
 .calender{
@@ -74,9 +87,15 @@ header .icons span:hover{
 
 .calender .week li{
     font-weight: 900;
+    
+    
 }
 .calender .days   {
     margin-bottom: 20px;
+    background-color: #18363E;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .calender .days li{
     cursor: pointer;
@@ -120,11 +139,11 @@ header .icons span:hover{
 }
 
 .days li:hover::before{
-    background: rgb(218, 216, 170);
+    background: #5F97AA;
     margin-left: 5px;
 }
 
 .days li.active::before{
-    background:  rgb(225, 169, 106);
+    background:  #5F97AA;
     margin-left: 5px;
 }
